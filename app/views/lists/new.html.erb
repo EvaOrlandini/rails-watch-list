@@ -1,6 +1,10 @@
+<div class="container form">
 <h1>Create a new list :</h1>
 
+<div class="form-container">
 <%= simple_form_for @list do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
+  <%= f.input :name, label: "Name of the list", input_html: { class: "custom-input" }%>
+  <%= f.button :submit, class: "retro button"%>
 <% end %>
+</div>
+</div>

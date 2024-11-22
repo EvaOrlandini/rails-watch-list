@@ -1,0 +1,29 @@
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.grid-item{
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+.card{
+  height:auto ;
+  width:250px ;
+  display: flex;
+  flex-direction:row;
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.movie-image{
+  img{
+    width:100px;
+  }
+}

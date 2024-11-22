@@ -1,0 +1,21 @@
+
+
+.form-container{
+  margin-top: 50px;
+  #list_name{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0px;
+    width: 250px;
+  }
+
+  label{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  .custom-input{
+    color: white;
+    font-size: 18px;
+  }
+}

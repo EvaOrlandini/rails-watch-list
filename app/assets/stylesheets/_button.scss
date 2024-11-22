@@ -1,0 +1,38 @@
+a, li{
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}
+
+.retro {
+	border-bottom: 6px inset rgba(0,0,0,.5);
+	border-left: 6px inset rgba(0,0,0,.5);
+	border-right: 6px inset rgba(255,255,255,.5);
+	border-top: 6px inset rgba(255,255,255,.5);
+	box-sizing: border-box;
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+
+  &.button{
+    background: #005800;
+    font-size: 18px;
+    width: 150px;
+    &:focus,
+    &:hover {
+      background: #006800;
+    }
+  }
+
+  &.list{
+    color: white;
+    line-height: 40px;
+    width: 250px;
+    background: #0000BC;
+    &:focus,
+    &:hover {
+      background: #0000FC;
+    }
+  }
+}

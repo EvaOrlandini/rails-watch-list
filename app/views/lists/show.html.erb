@@ -1,18 +1,23 @@
-<div class="banner-container">
+<div class="container show">
 <h1><%= @list.name %></h1>
-</div>
 
-<div class="cards">
+<div class="cards grid-container">
 <% @list.bookmarks.each do |bookmark|%>
-  <div class="movie-card">
-    <%= image_tag(bookmark.movie.poster_url, alt: bookmark.movie.title, class: "movie-image")%>
-    <p><%= bookmark.movie.title %></p>
-    <p><%= bookmark.movie.rating %></p>
-    <p><%= bookmark.comment %></p>
-    <%= link_to "Delete", list_bookmark_path(@list, bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+  <div class="card grid-item">
+      <div class="movie-image">
+        <%= image_tag(bookmark.movie.poster_url, alt: bookmark.movie.title, class: "movie-image")%>
+      </div>
+      <div class="movie-info">
+        <p><%= bookmark.movie.title %></p>
+        <p><%= bookmark.movie.rating %></p>
+        <p><%= bookmark.comment %></p>
+        <%= link_to "Delete", list_bookmark_path(@list, bookmark), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+      </div>
   </div>
 <% end %>
 </div>
 
 <%= link_to "Add a bookmark", new_list_bookmark_path(@list) %>
 <%= link_to "Go back on the lists", lists_path %>
+
+</div>
