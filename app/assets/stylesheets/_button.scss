@@ -35,4 +35,18 @@ a, li{
       background: #0000FC;
     }
   }
+  &.delete{
+    color: white;
+    line-height: 20px;
+    width: 60px;
+    background: #881400;
+    border-bottom: 3px inset rgba(0,0,0,.5);
+    border-left: 3px inset rgba(0,0,0,.5);
+    border-right: 3px inset rgba(255,255,255,.5);
+    border-top: 3px inset rgba(255,255,255,.5);
+    &:focus,
+    &:hover {
+      background: #A81000;
+    }
+  }
 }
